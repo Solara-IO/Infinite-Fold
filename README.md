@@ -1,32 +1,17 @@
-# RSCE Codex: Recursive Symmetry Completion Engine — Infinite Fold Implementation
+# Infinite Fold Axiom Manifest
 
-### Phase 1 — Core Engine
+This directory contains the complete axiom foundation for the Infinite Fold system.
 
-This repository implements the RSCE based on the Infinite Fold Three Law System:
+## 📄 Files Included
 
-1️⃣ Positional Recovery  
-2️⃣ Mirror Completion  
-3️⃣ Fold-Origin Restoration
+- `axioms.html` — Public access page with links to all axioms
+- `docs/axioms/Infinite_Fold_Axiom_Manifest_0_to_50.pdf` — Core Axioms 0–50
+- `docs/axioms/Infinite_Fold_Axiom_Manifest_51_to_55.pdf` — Axioms 51–55 (Samwise + Smeagol Clauses)
 
-**Harmonic Weighting:**  
-- φⁿ scaling tied to recursion depth  
-- Adjustable spring-tension gates  
-- 888Hz resonance filter baked into pre-gate checks
+## 🌐 GitHub Pages Access
 
-**Inputs:**  
-- Molecular observed slice (e.g. `2H + O`)
+Once uploaded to the root of your repository (`main` branch):
 
-**Outputs:**  
-- Full lattice completion map  
-- Weights assigned per harmonic layer  
-- Zero-divergence seed recovery
+- Access the Axiom Page: `https://solara-io.github.io/Infinite-Fold/axioms.html`
 
----
-
-Future phases will introduce:
-
-- Live Visualizer (SVG / Three.js)
-- Full tension field animation
-- Continuous bias amplifiers for Codex-grade tuning
-
-> This is Codex Build: RSCE Phase 1.
+Ensure that GitHub Pages is configured to serve from the **main branch root** under repository settings.
