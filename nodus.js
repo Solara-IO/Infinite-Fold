@@ -13,7 +13,6 @@ function sendToNodus() {
   logToConsole("[YOU] " + input);
   inputField.value = "";
 
-  // Basic response simulation logic
   const response = nodusProcess(input);
   logToConsole("[NODUS] " + response);
 }

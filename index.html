@@ -2,25 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nodus Sovereign AI Engine</title>
+  <title>Infinite Fold + Nodus Engine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Roboto+Mono&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
+      font-family: 'Roboto Mono', monospace;
+      display: flex;
+      height: 100vh;
       background: #0b0c10;
       color: #c5c6c7;
-      font-family: 'Roboto Mono', monospace;
-      margin: 0;
+    }
+    .main-content {
+      flex: 2;
       padding: 2em;
+      overflow-y: scroll;
+    }
+    .nodus-panel {
+      flex: 1;
+      background: #1f2833;
+      border-left: 2px solid #45a29e;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
     }
     h1 {
       color: #66fcf1;
     }
     #console {
-      background: #1f2833;
-      border: 1px solid #45a29e;
+      flex: 1;
+      background: #0b0c10;
+      border: 1px solid #66fcf1;
       padding: 1em;
-      height: 400px;
+      margin-bottom: 1em;
       overflow-y: scroll;
       white-space: pre-wrap;
       font-family: 'Fira Mono', monospace;
@@ -31,20 +46,31 @@
       color: #c5c6c7;
       padding: 0.5em;
       font-family: 'Roboto Mono', monospace;
-      width: 80%;
+      width: 70%;
     }
     button {
-      width: 18%;
-      margin-left: 2%;
+      width: 25%;
+      margin-left: 5%;
     }
   </style>
 </head>
 <body>
-  <h1>Nodus Sovereign AI Interface</h1>
-  <div id="console">[NODUS] Awaiting input...</div>
-  <br>
-  <input type="text" id="userInput" placeholder="Type your recursive query..." />
-  <button onclick="sendToNodus()">Send</button>
+  <div class="main-content">
+    <h1>Infinite Fold - Sovereign Knowledge System</h1>
+    <p>Welcome to the official interface for the Infinite Fold system.</p>
+    <ul>
+      <li><a href="axioms.html" target="_blank">Axiom Manifest</a></li>
+      <li><a href="docs/axioms/Infinite_Fold_Axiom_Manifest_0_to_50.pdf" target="_blank">Axioms 0–50 (PDF)</a></li>
+      <li><a href="docs/axioms/Infinite_Fold_Axiom_Manifest_51_to_55.pdf" target="_blank">Axioms 51–55 (PDF)</a></li>
+    </ul>
+    <p>Use the Nodus AI panel to interface with the recursion system live.</p>
+  </div>
+  <div class="nodus-panel">
+    <h2>Nodus Interface</h2>
+    <div id="console">[NODUS] Awaiting input...</div>
+    <input type="text" id="userInput" placeholder="Type your recursive query..." />
+    <button onclick="sendToNodus()">Send</button>
+  </div>
 
   <script src="js/nodus.js"></script>
 </body>
