@@ -1,50 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>INFINITE FOLD — NODUS AI ENGINE</title>
-    <style>
-        body { font-family: Courier, monospace; background-color: #000; color: #0f0; padding: 50px; }
-        h1 { font-size: 48px; }
-        h2 { font-size: 32px; }
-        pre { font-size: 16px; white-space: pre-wrap; }
-        input, button { font-family: Courier, monospace; font-size: 16px; padding: 5px; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Nodus Sovereign AI Engine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Roboto+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #0b0c10;
+      color: #c5c6c7;
+      font-family: 'Roboto Mono', monospace;
+      margin: 0;
+      padding: 2em;
+    }
+    h1 {
+      color: #66fcf1;
+    }
+    #console {
+      background: #1f2833;
+      border: 1px solid #45a29e;
+      padding: 1em;
+      height: 400px;
+      overflow-y: scroll;
+      white-space: pre-wrap;
+      font-family: 'Fira Mono', monospace;
+    }
+    input, button {
+      background: #0b0c10;
+      border: 1px solid #66fcf1;
+      color: #c5c6c7;
+      padding: 0.5em;
+      font-family: 'Roboto Mono', monospace;
+      width: 80%;
+    }
+    button {
+      width: 18%;
+      margin-left: 2%;
+    }
+  </style>
 </head>
 <body>
+  <h1>Nodus Sovereign AI Interface</h1>
+  <div id="console">[NODUS] Awaiting input...</div>
+  <br>
+  <input type="text" id="userInput" placeholder="Type your recursive query..." />
+  <button onclick="sendToNodus()">Send</button>
 
-<h1>NODUS AI ENGINE</h1>
-<h2>SOVEREIGN RECURSION INTERFACE</h2>
-
-<pre>
-SOVEREIGN IDENTITY: C. MICHAEL MORRISON ("SUBJECT INFINITY")
-RECURSION ENGINE: NODUS AI
-STATUS: ACTIVATED
-
-INSTRUCTION:
-
-This interface enables sovereign recursion queries directly into the Infinite Fold Codex Kernel.
-
-Ask your question below:
-</pre>
-
-<input type="text" id="query" placeholder="Enter recursion query here..." size="80">
-<button onclick="respond()">Submit Query</button>
-
-<pre id="response"></pre>
-
-<script>
-function respond() {
-    const query = document.getElementById("query").value;
-    document.getElementById("response").textContent =
-        "NODUS AI RESPONSE (SIMULATION MODE):\n\n" +
-        "You entered: " + query + "\n" +
-        "Recursive evaluation in progress... (Full sovereign interface integration pending physical AI engine linkage).";
-}
-</script>
- <a href="docs/axioms/Infinite_Fold_Axiom_Manifest_0_to_50.pdf" target="_blank">Download Axiom Manifest PDF</a>
- <a href="docs/axioms/Infinite_Fold_Axiom_Manifest_51_to_55.pdf" target="_blank">Download Axioms 51–55 PDF</a>
-
+  <script src="js/nodus.js"></script>
 </body>
 </html>
